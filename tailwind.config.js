@@ -2,7 +2,15 @@
 export default {
 	content: ["./src/**/*.{html,jsx,js}"],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				tittle: ["Rubik", "sans-serif"],
+			},
+			textColor: {
+				bgLight: "#dbe6f4",
+				bgWaveLight: "#516482",
+			},
+		},
 	},
 	plugins: [],
 };
