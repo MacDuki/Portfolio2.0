@@ -3,10 +3,9 @@ import { createContext, useState } from "react";
 const generalContext = createContext();
 
 function GeneralContext({ children }) {
-	const [miValor, setMiValor] = useState("Valor de prueba");
-
+	const [activeMenu, setActiveMenu] = useState(false);
 	return (
-		<generalContext.Provider value={{ miValor }}>
+		<generalContext.Provider value={{ activeMenu, setActiveMenu }}>
 			{children}
 		</generalContext.Provider>
 	);
