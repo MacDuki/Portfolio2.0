@@ -1,12 +1,12 @@
-import { useState } from "react";
 import "./App.css";
 import { Home } from "./Components/Home/Home";
+import { GeneralContext } from "./Context/GeneralContext";
 function App() {
-	const [count, setCount] = useState(0);
-
 	return (
 		<main>
-			<Home />
+			<GeneralContext>
+				<Home />
+			</GeneralContext>
 		</main>
 	);
 }
