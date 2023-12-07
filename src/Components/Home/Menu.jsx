@@ -7,7 +7,7 @@ function Menu() {
 
 	if (activeMenu) {
 		return (
-			<div className='flex flex-col items-center min-h-600 xl:min-h-0'>
+			<div className='flex flex-col items-center min-h-600 lg:min-h-810 xl:min-h-280 2xl:min-h-0'>
 				<div className='w-5/6 flex flex-col text-center items-center justify-center gap-4 mx-4 md:flex-row lg:mx-10'>
 					<motion.div
 						animate={{ x: 0 }}
@@ -50,7 +50,7 @@ function Menu() {
 		);
 	} else if (!activeMenu) {
 		return (
-			<div className='flex flex-col items-center min-h-560 xl:min-h-0'>
+			<div className='flex flex-col items-center pt-10 lg:pt-0 min-h-560 lg:min-h-800 md:min-h-580 xl:min-h-350 2xl:min-h-0'>
 				<motion.h1
 					animate={{ y: 0 }}
 					initial={{ y: 500, x: 0 }}

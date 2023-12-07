@@ -7,7 +7,7 @@ import { Menu } from "./Menu";
 function HomeTittle() {
 	const { activeMenu, setActiveMenu } = useContext(generalContext);
 	return (
-		<div className='w-full h-full  relative z-10 2xl:h-1/2 2xl:mt-[-500px] '>
+		<div className='w-full h-full flex flex-col items-center justify-center relative z-10  '>
 			<motion.img
 				layout
 				animate={{ y: 0 }}
@@ -24,7 +24,7 @@ function HomeTittle() {
 
 			<motion.div
 				layout
-				className='flex flex-col items-center font-tittle cursor-default font-bold text-3xl h-auto  lg:min-h-0 2xl:min-h-0 text-bgWaveLight md:text-5xl lg:text-5xl '>
+				className='flex flex-col items-center font-tittle cursor-default font-bold text-3xl h-auto text-bgWaveLight md:text-5xl lg:text-5xl '>
 				<motion.div
 					animate={{ scale: 1 }}
 					initial={{ scale: 0 }}
@@ -55,7 +55,7 @@ function HomeTittle() {
 					damping: 80,
 					mass: 4,
 				}}
-				className='w-full mt-[-2px] md:mt-5 lg:mt-80 xl:mt-36 2xl:mt-0'
+				className='w-full'
 				src='src\assets\waveH2.svg'
 			/>
 		</div>
