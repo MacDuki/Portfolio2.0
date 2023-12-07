@@ -7,7 +7,7 @@ function Menu() {
 
 	if (activeMenu) {
 		return (
-			<>
+			<div className='flex flex-col items-center min-h-600 xl:min-h-0'>
 				<div className='w-5/6 flex flex-col text-center items-center justify-center gap-4 mx-4 md:flex-row lg:mx-10'>
 					<motion.div
 						animate={{ x: 0 }}
@@ -46,11 +46,11 @@ function Menu() {
 						About Me
 					</motion.div>
 				</div>
-			</>
+			</div>
 		);
 	} else if (!activeMenu) {
 		return (
-			<>
+			<div className='flex flex-col items-center min-h-560 xl:min-h-0'>
 				<motion.h1
 					animate={{ y: 0 }}
 					initial={{ y: 500, x: 0 }}
@@ -75,7 +75,7 @@ function Menu() {
 					className='w-auto whitespace-nowrap z-20'>
 					FullStack Developer
 				</motion.h2>
-			</>
+			</div>
 		);
 	}
 }
