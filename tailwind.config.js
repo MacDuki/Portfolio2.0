@@ -9,6 +9,7 @@ export default {
 			textColor: {
 				bgLight: "#dbe6f4",
 				bgWaveLight: "#516482",
+				bgLightTheme: "#D9D5E1",
 			},
 			minHeight: {
 				280: "280px",
