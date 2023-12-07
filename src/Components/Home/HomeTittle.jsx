@@ -7,7 +7,7 @@ import { Menu } from "./Menu";
 function HomeTittle() {
 	const { activeMenu, setActiveMenu } = useContext(generalContext);
 	return (
-		<div className='w-full h-full relative z-10 '>
+		<div className='w-full h-full relative z-10 lg:h-1/2 lg:mt-[-500px] '>
 			<motion.img
 				layout
 				animate={{ y: 0 }}
