@@ -3,7 +3,7 @@ import bStyle from "./background.module.css";
 function Home() {
 	return (
 		<section
-			className={`flex flex-col h-full items-center justify-start relative  ${bStyle.background}`}>
+			className={`flex flex-col items-center justify-start relative h-auto  ${bStyle.background}`}>
 			<HomeTittle />
 			<span></span>
 			<span></span>

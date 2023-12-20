@@ -6,8 +6,15 @@ import { Menu } from "./Menu";
 
 function HomeTittle() {
 	const { activeMenu, setActiveMenu } = useContext(generalContext);
+
+	function scrollToTop() {
+		window.scrollTo({
+			top: 0,
+			behavior: "smooth",
+		});
+	}
 	return (
-		<div className='w-full h-full flex flex-col items-center justify-center relative z-10  '>
+		<div className='w-full h-auto flex flex-col items-center justify-center relative z-10  '>
 			<motion.img
 				layout
 				animate={{ y: 0 }}
@@ -39,6 +46,7 @@ function HomeTittle() {
 					className='mb-10 cursor-pointer text-black text-7xl lg:text-6xl'
 					onClick={() => {
 						setActiveMenu(!activeMenu);
+						scrollToTop();
 					}}>
 					{activeMenu ? <CgClose /> : <CgMenuGridO />}
 				</motion.div>
