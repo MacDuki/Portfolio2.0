@@ -5,6 +5,36 @@ function AboutForm() {
 	const { parrafo1, parrafo2, parrafo3, parrafo4, parrafo5 } =
 		useContext(generalContext);
 	const [parrafo, setParrafo] = useState("");
+	const [selectedOption, setSelectedOption] = useState("");
+	let value;
+	function handleOptionChange(event) {
+		value = event.target.value;
+		if (selectedOption === value) {
+			setSelectedOption("");
+			setParrafo("");
+		} else {
+			setSelectedOption(value);
+			switch (value) {
+				case "shortest":
+					setParrafo(parrafo1);
+					break;
+				case "shorter":
+					setParrafo(parrafo2);
+					break;
+				case "short":
+					setParrafo(parrafo3);
+					break;
+				case "longer":
+					setParrafo(parrafo4);
+					break;
+				case "longest":
+					setParrafo(parrafo5);
+					break;
+				default:
+					setParrafo("");
+			}
+		}
+	}
 
 	return (
 		<>
@@ -18,9 +48,9 @@ function AboutForm() {
 								id='radio-button-shortest'
 								name='biolength'
 								value='shortest'
-								onClick={() => {
-									setParrafo(parrafo1);
-								}}
+								checked={selectedOption === "shortest"}
+								onChange={handleOptionChange}
+								onClick={handleOptionChange}
 							/>
 							<label htmlFor='radio-button-shortest'>
 								<span className='span-form'>Menos</span>
@@ -33,9 +63,9 @@ function AboutForm() {
 								id='radio-button-shorter'
 								name='biolength'
 								value='shorter'
-								onClick={() => {
-									setParrafo(parrafo2);
-								}}
+								checked={selectedOption === "shorter"}
+								onChange={handleOptionChange}
+								onClick={handleOptionChange}
 							/>
 						</div>
 						<div className='bio-input-action'>
@@ -45,9 +75,9 @@ function AboutForm() {
 								id='radio-button-short'
 								name='biolength'
 								value='short'
-								onClick={() => {
-									setParrafo(parrafo3);
-								}}
+								checked={selectedOption === "short"}
+								onChange={handleOptionChange}
+								onClick={handleOptionChange}
 							/>
 						</div>
 						<div className='bio-input-action'>
@@ -57,9 +87,9 @@ function AboutForm() {
 								id='radio-button-longer'
 								name='biolength'
 								value='longer'
-								onClick={() => {
-									setParrafo(parrafo4);
-								}}
+								checked={selectedOption === "longer"}
+								onChange={handleOptionChange}
+								onClick={handleOptionChange}
 							/>
 						</div>
 						<div className='bio-input-action'>
@@ -69,9 +99,9 @@ function AboutForm() {
 								id='radio-button-longest'
 								name='biolength'
 								value='longest'
-								onClick={() => {
-									setParrafo(parrafo5);
-								}}
+								checked={selectedOption === "longest"}
+								onChange={handleOptionChange}
+								onClick={handleOptionChange}
 							/>
 							<label htmlFor='radio-button-longest'>
 								<span className='span-form'>Más</span>
