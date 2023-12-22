@@ -1,0 +1,6 @@
+/* AnimatedParagraph.module.css */
+
+.paragraph {
+	text-align: left;
+	transition: height 0.3s ease-in-out;
+}

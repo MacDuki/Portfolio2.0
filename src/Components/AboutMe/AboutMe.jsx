@@ -3,7 +3,7 @@ import { AboutForm } from "./AboutForm";
 
 function AboutMe() {
 	return (
-		<section className='bg-slate-200 flex flex-col items-center justify-center relative'>
+		<section className='bg-slate-200  min-h-1000 flex flex-col items-center justify-start relative'>
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1 }}
 				initial={{ opacity: 0, scale: 0 }}
@@ -14,7 +14,7 @@ function AboutMe() {
 					mass: 4,
 					duration: 0.1,
 				}}
-				className=' text-6xl absolute top-1 mx-auto font-tittle font-bold text-bgWaveLight md:text-8xl md:top-6'>
+				className='mt-6 text-6xl mx-auto font-tittle font-bold text-bgWaveLight md:text-8xl '>
 				AboutMe
 			</motion.h2>
 			<AboutForm />
