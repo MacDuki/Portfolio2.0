@@ -3,7 +3,7 @@ import { AboutForm } from "./AboutForm";
 
 function AboutMe() {
 	return (
-		<section className='bg-slate-200  min-h-1000 flex flex-col items-center justify-start relative'>
+		<section className='bg-slate-200   pb-72  min-h-screen flex flex-col items-center justify-start relative'>
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1 }}
 				initial={{ opacity: 0, scale: 0 }}

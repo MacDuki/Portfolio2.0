@@ -1,10 +1,9 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useContext, useState } from "react";
-import { IoIosClose } from "react-icons/io";
 import { generalContext } from "../../Context/GeneralContext";
+
 import styles from "./AnimatedParagraph.module.css";
 import profileStyles from "./profileStyle.module.css";
-
 function AboutForm() {
 	const { parrafo1, parrafo2, parrafo3, parrafo4, parrafo5 } =
 		useContext(generalContext);
@@ -12,6 +11,7 @@ function AboutForm() {
 	const [selectedOption, setSelectedOption] = useState("");
 	const [isVisible, setIsVisible] = useState(false);
 	const [heightP, setHeightP] = useState("");
+
 	let value;
 	function handleOptionChange(event) {
 		value = event.target.value;
@@ -52,45 +52,30 @@ function AboutForm() {
 	}
 
 	return (
-		<motion.div
-			className='flex flex-col items-center w-5/6 h-auto justify-center'
-			layout>
-			{isVisible ? (
-				<div className='text-6xl flex w-full items-center justify-center'>
-					<IoIosClose
-						onClick={() => {
-							setSelectedOption("");
-							setParrafo("");
-							setHeightP("");
-							setIsVisible(false);
-						}}
+		<motion.div className='flex flex-col items-center w-5/6 h-5/6 justify-center my-5'>
+			<AnimatePresence>
+				<motion.div
+					key='profile-container'
+					initial={{ y: 100 }}
+					animate={{ y: 0 }}
+					exit={{ opacity: 0 }}
+					transition={{ ease: "easeOut", duration: 0.5 }}
+					className='w-96 relative z-20'
+					style={{
+						backgroundImage: "url('src/assets/circleProfileContainer.svg')",
+						backgroundRepeat: "no-repeat",
+						backgroundSize: "contain",
+						backgroundPosition: "center",
+					}}>
+					<img
+						alt=' '
+						className={`relative mt-14 w-full z-20 h-auto ${profileStyles.floatPicture}`}
+						src='src\assets\circle profile.png'
 					/>
-				</div>
-			) : (
-				<AnimatePresence>
-					<motion.div
-						initial={{ y: 100 }}
-						animate={{ y: 0 }}
-						exit={{ y: -100, opacity: 0 }}
-						transition={{ ease: "easeOut", duration: 0.5 }}
-						className='w-96 relative h-auto '
-						style={{
-							backgroundImage: "url('src/assets/circleProfileContainer.svg')",
-							backgroundRepeat: "no-repeat",
-							backgroundSize: "contain",
-							backgroundPosition: "center",
-						}}>
-						<img
-							alt=' '
-							className={`relative  mt-14  w-full  h-auto ${profileStyles.floatPicture} `}
-							src='src\assets\circle profile.png'
-						/>
-					</motion.div>
-				</AnimatePresence>
-			)}
-
-			<div className=' w-full h-20 flex items-center justify-center md:w-96'>
-				<div className='text-center flex items-center justify-center w-full border-none'>
+				</motion.div>
+			</AnimatePresence>
+			<div className=' w-full h-20  flex items-center justify-center md:w-96'>
+				<div className='relative text-center flex items-center justify-center w-full border-none'>
 					<div className=' border border-black bg-slate-600 p-8 z-50 rounded-lg flex justify-between w-full'>
 						<div className=''>
 							<input
@@ -158,11 +143,11 @@ function AboutForm() {
 			<AnimatePresence>
 				{isVisible && (
 					<motion.div
-						initial={{ y: -100 }}
-						animate={{ y: 0 }}
-						exit={{ x: 300, opacity: 0 }}
-						transition={{ ease: "easeOut", duration: 0.5 }}
-						className={`flex items-center mt-8 w-full mx-6  ${heightP} border border-black rounded-lg overflow-hidden ${styles.paragraph} `}>
+						initial={{ x: -600 }}
+						animate={{ x: 0 }}
+						exit={{ x: 600, opacity: 0 }}
+						transition={{ ease: "easeOut", duration: 0.3 }}
+						className={`flex items-center mt-1 w-full mx-6  ${heightP} border border-black rounded-lg overflow-hidden ${styles.paragraph} `}>
 						<p className='px-2 py-4'>{parrafo}</p>
 					</motion.div>
 				)}
