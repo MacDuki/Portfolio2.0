@@ -148,7 +148,7 @@ function AboutForm() {
 						exit={{ x: 600, opacity: 0 }}
 						transition={{ ease: "easeOut", duration: 0.3 }}
 						className={`flex items-center mt-1 w-full mx-6  ${heightP} border border-black rounded-lg overflow-hidden ${styles.paragraph} `}>
-						<p className='px-2 py-4'>{parrafo}</p>
+						<div className='px-2 py-4 whitespace-pre-line'>{parrafo}</div>
 					</motion.div>
 				)}
 			</AnimatePresence>

@@ -34,7 +34,7 @@ function Projects() {
 					}}
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.9 }}
-					className='w-60 h-60 bg-red-700 border-2 border-black'>
+					className='w-60 h-60 bg-red-700 border-2 border-black cursor-pointer'>
 					<img className='w-60 h-60 border-2 border-black' alt='' src='' />
 				</motion.div>
 				<motion.div
@@ -48,7 +48,7 @@ function Projects() {
 					}}
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 0.9 }}
-					className='w-60 h-60 bg-red-700 border-2 border-black'>
+					className='w-60 h-60 bg-red-700 border-2 border-black cursor-pointer'>
 					<img className='w-60 h-60 border-2 border-black' alt='' src='' />
 				</motion.div>
 				<motion.div
@@ -62,7 +62,7 @@ function Projects() {
 					}}
 					whileHover={{ scale: 1.1 }}
 					whileTap={{ scale: 1 }}
-					className='w-60 h-60 bg-red-700 border-2 border-black'>
+					className='w-60 h-60 bg-red-700 border-2 border-black cursor-pointer'>
 					<img className='w-60 h-60 border-2 border-black' alt='' src='' />
 				</motion.div>
 			</div>
