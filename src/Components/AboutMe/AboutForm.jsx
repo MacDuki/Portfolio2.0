@@ -27,22 +27,27 @@ function AboutForm() {
 				case "shortest":
 					setParrafo(parrafo1);
 					setHeightP("h-9");
+
 					break;
 				case "shorter":
 					setParrafo(parrafo2);
 					setHeightP("h-36");
+
 					break;
 				case "short":
 					setParrafo(parrafo3);
 					setHeightP("h-56");
+
 					break;
 				case "longer":
 					setParrafo(parrafo4);
 					setHeightP("h-80");
+
 					break;
 				case "longest":
 					setParrafo(parrafo5);
 					setHeightP("h-96");
+
 					break;
 				default:
 					setParrafo("");
@@ -140,18 +145,24 @@ function AboutForm() {
 					</div>
 				</div>
 			</div>
-			<AnimatePresence>
-				{isVisible && (
-					<motion.div
-						initial={{ x: -600 }}
-						animate={{ x: 0 }}
-						exit={{ x: 600, opacity: 0 }}
-						transition={{ ease: "easeOut", duration: 0.3 }}
-						className={`flex items-center mt-1 w-full mx-6  ${heightP} border border-black rounded-lg overflow-hidden ${styles.paragraph} `}>
-						<div className='px-2 py-4 whitespace-pre-line'>{parrafo}</div>
-					</motion.div>
-				)}
-			</AnimatePresence>
+
+			<motion.div layout className='flex flex-col items-center w-full h-full'>
+				<AnimatePresence>
+					{isVisible && (
+						<motion.div
+							layout
+							initial={{ x: -600 }}
+							animate={{ x: 0 }}
+							exit={{ x: 600, opacity: 0 }}
+							transition={{ ease: "easeOut", duration: 0.3 }}
+							className={`flex items-center mt-1 w-full md:w-1/2 mx-6  border border-black rounded-lg overflow-hidden ${styles.paragraph} `}>
+							<div className='px-2 py-4 whitespace-pre-line select-none'>
+								{parrafo}
+							</div>
+						</motion.div>
+					)}
+				</AnimatePresence>
+			</motion.div>
 		</motion.div>
 	);
 }

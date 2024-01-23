@@ -20,7 +20,7 @@ function Menu() {
 							damping: 80,
 							mass: 4,
 						}}
-						className='w-full bg-slate-900 px-2 py-1 rounded-lg cursor-pointer'>
+						className=' select-none w-full bg-slate-900 px-2 py-1 rounded-lg cursor-pointer'>
 						Projects
 					</motion.div>
 					<motion.div
@@ -34,7 +34,7 @@ function Menu() {
 							damping: 80,
 							mass: 4,
 						}}
-						className='w-full bg-slate-900 px-2 py-1 rounded-lg cursor-pointer'>
+						className='w-full select-none bg-slate-900 px-2 py-1 rounded-lg cursor-pointer'>
 						Contact
 					</motion.div>
 					<motion.div
@@ -48,7 +48,7 @@ function Menu() {
 							damping: 80,
 							mass: 4,
 						}}
-						className='w-full bg-slate-900 px-2 py-1 whitespace-nowrap rounded-lg cursor-pointer'>
+						className='w-full select-none bg-slate-900 px-2 py-1 whitespace-nowrap rounded-lg cursor-pointer'>
 						About Me
 					</motion.div>
 				</div>
@@ -66,7 +66,7 @@ function Menu() {
 						damping: 80,
 						mass: 4,
 					}}
-					className='w-auto whitespace-nowrap '>
+					className=' select-none w-auto whitespace-nowrap '>
 					Pedro Wattimo
 				</motion.h1>
 				<motion.h2
@@ -78,7 +78,7 @@ function Menu() {
 						damping: 80,
 						mass: 4,
 					}}
-					className='w-auto whitespace-nowrap z-20'>
+					className='select-none w-auto whitespace-nowrap z-20'>
 					FullStack Developer
 				</motion.h2>
 			</div>

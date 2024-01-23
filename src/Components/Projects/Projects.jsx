@@ -19,7 +19,7 @@ function Projects() {
 					mass: 4,
 					duration: 0.1,
 				}}
-				className=' text-6xl absolute top-1 mx-auto font-tittle font-bold text-bgLight md:text-8xl md: top-6'>
+				className='select-none text-6xl absolute top-1 mx-auto font-tittle font-bold text-bgLight md:text-8xl md: top-6'>
 				Projects
 			</motion.h2>
 			<div className='bg-slate-300 h-5/6 w-5/6 flex flex-col p-40 rounded-lg items-center justify-center lg:flex-row gap-5'>
