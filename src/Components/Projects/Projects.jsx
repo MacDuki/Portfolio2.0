@@ -24,8 +24,8 @@ function Projects() {
 			</motion.h2>
 			<div className='bg-slate-300 h-5/6 w-5/6 flex flex-col p-40 rounded-lg items-center justify-center lg:flex-row gap-5'>
 				<motion.div
-					whileInView={{ opacity: 1, y: 0 }}
-					initial={{ opacity: 0, y: -200 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					initial={{ opacity: 0, x: -200 }}
 					transition={{
 						type: "spring",
 						stiffness: 363,
@@ -38,8 +38,8 @@ function Projects() {
 					<img className='w-60 h-60 border-2 border-black' alt='' src='' />
 				</motion.div>
 				<motion.div
-					whileInView={{ opacity: 1, y: 0 }}
-					initial={{ opacity: 0, y: 200 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					initial={{ opacity: 0, x: -200 }}
 					transition={{
 						type: "spring",
 						stiffness: 363,
@@ -52,8 +52,8 @@ function Projects() {
 					<img className='w-60 h-60 border-2 border-black' alt='' src='' />
 				</motion.div>
 				<motion.div
-					whileInView={{ opacity: 1, y: 0 }}
-					initial={{ opacity: 0, y: -200 }}
+					whileInView={{ opacity: 1, x: 0 }}
+					initial={{ opacity: 0, x: -200 }}
 					transition={{
 						type: "spring",
 						stiffness: 363,
