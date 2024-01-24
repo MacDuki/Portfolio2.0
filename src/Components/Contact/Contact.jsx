@@ -14,7 +14,7 @@ function Contact() {
 					mass: 4,
 					duration: 0.1,
 				}}
-				className='mt-6 mb-16 text-6xl mx-auto font-tittle font-bold text-bgWaveLight md:text-8xl '>
+				className='select-none mt-6 mb-16 text-6xl mx-auto font-tittle font-bold text-bgWaveLight md:text-8xl '>
 				Contact Me
 			</motion.h2>
 			<ContactForm />

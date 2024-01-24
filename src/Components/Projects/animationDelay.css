@@ -1,0 +1,39 @@
+.delay-100 {
+	animation: bounce 1s 100ms infinite;
+}
+
+.delay-200 {
+	animation: bounce 1s 200ms infinite;
+}
+
+.delay-300 {
+	animation: bounce 1s 300ms infinite;
+}
+
+.delay-400 {
+	animation: bounce 1s 400ms infinite;
+}
+
+.delay-500 {
+	animation: bounce 1s 500ms infinite;
+}
+
+.delay-600 {
+	animation: bounce 1s 600ms infinite;
+}
+
+.delay-700 {
+	animation: bounce 1s 700ms infinite;
+}
+
+.delay-800 {
+	animation: bounce 1s 800ms infinite;
+}
+
+.delay-900 {
+	animation: bounce 1s 900ms infinite;
+}
+
+.delay-1000 {
+	animation: bounce 1s 1000ms infinite;
+}

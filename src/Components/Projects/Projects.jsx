@@ -4,6 +4,7 @@ import { FaAws, FaCss3Alt, FaGithub, FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiExpress, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import "./animationDelay.css";
 
 function Projects() {
 	return (
@@ -68,34 +69,34 @@ function Projects() {
 			</div>
 			<div className='px-5 mt-16'>
 				<label className='flex flex-wrap flex-start items-center justify-center flex-row text-5xl gap-5  w-full h-auto  lg:gap-10 '>
-					<span>
+					<span className='delay-100  hover:animate-none'>
 						<FaReact />
 					</span>
-					<span>
+					<span className='delay-200  hover:animate-none '>
 						<FaNodeJs />
 					</span>
-					<span>
+					<span className='delay-300  hover:animate-none '>
 						<FaGithub />
 					</span>
-					<span>
+					<span className='delay-400  hover:animate-none'>
 						<RiJavascriptFill />
 					</span>
-					<span>
+					<span className='delay-500  hover:animate-none '>
 						<FaCss3Alt />
 					</span>
-					<span>
+					<span className='delay-600  hover:animate-none '>
 						<SiTailwindcss />
 					</span>
-					<span>
+					<span className='delay-700 hover:animate-none '>
 						<SiExpress />
 					</span>
-					<span>
+					<span className='delay-800 hover:animate-none '>
 						<SiNextdotjs />
 					</span>
-					<span>
+					<span className='delay-900  hover:animate-none '>
 						<FaAws />
 					</span>
-					<span>
+					<span className='delay-1000  hover:animate-none '>
 						<BiLogoPostgresql />
 					</span>
 				</label>

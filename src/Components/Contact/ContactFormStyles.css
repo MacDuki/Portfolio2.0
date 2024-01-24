@@ -96,3 +96,9 @@
 	background-color: #fff;
 	border-color: #fff;
 }
+
+@media screen and (max-width: 600px) {
+	.form-container {
+		width: 300px;
+	}
+}
