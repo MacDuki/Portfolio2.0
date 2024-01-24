@@ -84,7 +84,7 @@ function AboutForm() {
 					<div className=' border border-black bg-slate-600 p-8 z-50 rounded-lg flex justify-between w-full'>
 						<div className=''>
 							<input
-								className='shortest'
+								className='shortest cursor-pointer w-5 h-5'
 								type='radio'
 								id='radio-button-shortest'
 								name='biolength'
@@ -96,7 +96,7 @@ function AboutForm() {
 						</div>
 						<div className=''>
 							<input
-								className='shorter'
+								className='shorter cursor-pointer'
 								type='radio'
 								id='radio-button-shorter'
 								name='biolength'
@@ -108,7 +108,7 @@ function AboutForm() {
 						</div>
 						<div className=''>
 							<input
-								className='short'
+								className='short cursor-pointer'
 								type='radio'
 								id='radio-button-short'
 								name='biolength'
@@ -120,7 +120,7 @@ function AboutForm() {
 						</div>
 						<div className=''>
 							<input
-								className='longer'
+								className='longer cursor-pointer'
 								type='radio'
 								id='radio-button-longer'
 								name='biolength'
@@ -132,7 +132,7 @@ function AboutForm() {
 						</div>
 						<div className=''>
 							<input
-								className='longest'
+								className='longest cursor-pointer w-5 h-5'
 								type='radio'
 								id='radio-button-longest'
 								name='biolength'

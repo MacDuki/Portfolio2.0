@@ -8,7 +8,7 @@ import { SiExpress, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 function Projects() {
 	return (
 		<section className='bg-slate-200 flex flex-col items-center justify-center relative'>
-			<img alt='' src='src\assets\projectWave.svg' />
+			<img alt='' className='select-none' src='src\assets\projectWave.svg' />
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1 }}
 				initial={{ opacity: 0, scale: 0 }}
@@ -100,7 +100,11 @@ function Projects() {
 					</span>
 				</label>
 			</div>
-			<img alt='' src='src\assets\projectWaveFloor.svg' />
+			<img
+				alt=''
+				className='select-none'
+				src='src\assets\projectWaveFloor.svg'
+			/>
 		</section>
 	);
 }

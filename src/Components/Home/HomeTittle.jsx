@@ -25,7 +25,7 @@ function HomeTittle() {
 					damping: 80,
 					mass: 4,
 				}}
-				className='w-full '
+				className='w-full select-none '
 				src='src\assets\waveH1.svg'
 			/>
 
@@ -63,7 +63,7 @@ function HomeTittle() {
 					damping: 80,
 					mass: 4,
 				}}
-				className='w-full'
+				className='w-full select-none'
 				src='src\assets\waveH2.svg'
 			/>
 		</div>
