@@ -69,7 +69,7 @@ function Projects() {
 			</div>
 			<div className='px-5 mt-16'>
 				<label className='flex flex-wrap flex-start items-center justify-center flex-row text-5xl gap-5  w-full h-auto  lg:gap-10 '>
-					<span className='delay-100  '>
+					<span className='delay-100   animate-bounce'>
 						<FaReact />
 					</span>
 					<span className='delay-200   '>

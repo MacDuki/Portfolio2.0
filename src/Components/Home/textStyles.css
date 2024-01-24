@@ -1,0 +1,33 @@
+.text-container {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.text-container h2 {
+	margin: 0;
+
+	color: rgba(225, 225, 225, 0.01);
+	background-repeat: repeat;
+	-webkit-background-clip: text;
+	animation: animate 15s ease-in-out infinite;
+	text-align: center;
+	text-transform: uppercase;
+	font-weight: 900;
+}
+
+@keyframes animate {
+	0%,
+	100% {
+		background-position: left top;
+	}
+	25% {
+		background-position: right bottom;
+	}
+	50% {
+		background-position: left bottom;
+	}
+	75% {
+		background-position: right top;
+	}
+}

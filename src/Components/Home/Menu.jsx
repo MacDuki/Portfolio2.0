@@ -1,9 +1,17 @@
 import { motion } from "framer-motion";
-import { useContext } from "react";
+import { useContext, useEffect, useState } from "react";
 import { generalContext } from "../../Context/GeneralContext";
-
+import "./textStyles.css";
 function Menu() {
 	const { activeMenu, setActiveMenu } = useContext(generalContext);
+
+	const [isImageLoading, setIsImageLoading] = useState(true);
+
+	useEffect(() => {
+		setTimeout(() => {
+			setIsImageLoading(false);
+		}, 500);
+	}, []);
 
 	if (activeMenu) {
 		return (
@@ -69,18 +77,22 @@ function Menu() {
 					className=' select-none w-auto whitespace-nowrap '>
 					Pedro Wattimo
 				</motion.h1>
-				<motion.h2
-					animate={{ y: 0 }}
-					initial={{ y: -500, x: 0 }}
-					transition={{
-						type: "spring",
-						stiffness: 363,
-						damping: 80,
-						mass: 4,
-					}}
-					className='select-none w-auto whitespace-nowrap z-20'>
-					FullStack Developer
-				</motion.h2>
+				<div className='text-container'>
+					<motion.h2
+						animate={{ y: 0 }}
+						initial={{ y: -500, x: 0 }}
+						transition={{
+							type: "spring",
+							stiffness: 363,
+							damping: 80,
+							mass: 4,
+						}}
+						className={`transition-colors duration-500 select-none w-auto whitespace-nowrap  bg-code-pattern z-20 text-2xl md:text-6xl lg:text-7xl ${
+							isImageLoading ? " bg-black" : "bg-code-pattern"
+						}`}>
+						FullStack Developer
+					</motion.h2>
+				</div>
 			</div>
 		);
 	}
