@@ -69,34 +69,34 @@ function Projects() {
 			</div>
 			<div className='px-5 mt-16'>
 				<label className='flex flex-wrap flex-start items-center justify-center flex-row text-5xl gap-5  w-full h-auto  lg:gap-10 '>
-					<span className='delay-100  hover:animate-none'>
+					<span className='delay-100  '>
 						<FaReact />
 					</span>
-					<span className='delay-200  hover:animate-none '>
+					<span className='delay-200   '>
 						<FaNodeJs />
 					</span>
-					<span className='delay-300  hover:animate-none '>
+					<span className='delay-300  '>
 						<FaGithub />
 					</span>
-					<span className='delay-400  hover:animate-none'>
+					<span className='delay-400 '>
 						<RiJavascriptFill />
 					</span>
-					<span className='delay-500  hover:animate-none '>
+					<span className='delay-500   '>
 						<FaCss3Alt />
 					</span>
-					<span className='delay-600  hover:animate-none '>
+					<span className='delay-600   '>
 						<SiTailwindcss />
 					</span>
-					<span className='delay-700 hover:animate-none '>
+					<span className='delay-700 '>
 						<SiExpress />
 					</span>
-					<span className='delay-800 hover:animate-none '>
+					<span className='delay-800 '>
 						<SiNextdotjs />
 					</span>
-					<span className='delay-900  hover:animate-none '>
+					<span className='delay-900   '>
 						<FaAws />
 					</span>
-					<span className='delay-1000  hover:animate-none '>
+					<span className='delay-1000   '>
 						<BiLogoPostgresql />
 					</span>
 				</label>

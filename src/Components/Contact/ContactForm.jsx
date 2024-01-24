@@ -2,7 +2,7 @@ import "./ContactFormStyles.css";
 
 function ContactForm() {
 	return (
-		<div class='form-container'>
+		<div class='form-container absolute top-60'>
 			<form
 				class='form'
 				onSubmit={(e) => {
