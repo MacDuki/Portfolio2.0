@@ -18,6 +18,14 @@ function ProjectInfo() {
 						porro ut aliquid at doloremque labore suscipit iste illum magni
 						officia. Impedit, ab. Facere sint totam at nisi id illo.
 					</p>
+					<div className='w-20 h-auto animate-bounce bg-red-700 rounded-md flex items-center justify-center text-center'>
+						<a
+							className='no-underline decoration-inherit '
+							href='https://ecommerce-react-e965a.web.app/'>
+							{" "}
+							Garage Shop
+						</a>
+					</div>
 				</div>
 			);
 		} else if ("Organizer" === moreData) {

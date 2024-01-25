@@ -32,7 +32,7 @@ function Projects() {
 				Projects
 			</motion.h2>
 
-			<div className='select-none bg-slate-300 w-full md:w-5/6 relative h-5/6 flex flex-col p-5 lg:p-40 rounded-lg items-center justify-center lg:flex-row gap-5'>
+			<div className='select-none bg-slate-300 w-full md:w-5/6 relative h-5/6 flex flex-col p-5 md:p-40 rounded-lg items-center justify-center lg:flex-row gap-5'>
 				{moreData ? (
 					<ProjectInfo />
 				) : (
