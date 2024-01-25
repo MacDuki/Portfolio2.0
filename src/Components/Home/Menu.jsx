@@ -14,7 +14,10 @@ function Menu() {
 	}, []);
 	const scrollToSection = (ref) => {
 		ref.current.scrollIntoView({ behavior: "smooth" });
-		setActiveMenu(!activeMenu);
+
+		setTimeout(() => {
+			setActiveMenu(!activeMenu);
+		}, 1000);
 	};
 
 	if (activeMenu) {
@@ -34,7 +37,7 @@ function Menu() {
 						}}
 						onClick={() => scrollToSection(projectsRef)}
 						className=' select-none w-full bg-slate-900 px-2 py-1 rounded-lg cursor-pointer'>
-						Projects
+						<p onClick={() => scrollToSection(projectsRef)}>Projects</p>
 					</motion.div>
 					<motion.div
 						animate={{ y: 0 }}
@@ -49,7 +52,7 @@ function Menu() {
 						}}
 						onClick={() => scrollToSection(contactRef)}
 						className='w-full select-none bg-slate-900 px-2 py-1 rounded-lg cursor-pointer'>
-						Contact
+						<p onClick={() => scrollToSection(contactRef)}>Contact</p>
 					</motion.div>
 					<motion.div
 						animate={{ x: 0 }}
@@ -64,7 +67,7 @@ function Menu() {
 						}}
 						onClick={() => scrollToSection(aboutMeRef)}
 						className='w-full select-none bg-slate-900 px-2 py-1 whitespace-nowrap rounded-lg cursor-pointer'>
-						About Me
+						<p onClick={() => scrollToSection(aboutMeRef)}>About Me</p>
 					</motion.div>
 				</div>
 			</div>
