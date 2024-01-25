@@ -1,10 +1,15 @@
 import { motion } from "framer-motion";
+import React from "react";
+import { generalContext } from "../../Context/GeneralContext";
 import { AnimatedWave } from "./AnimatedWave";
 import { ContactForm } from "./ContactForm";
 
 function Contact() {
+	const { contactRef } = React.useContext(generalContext);
 	return (
-		<section className='bg-slate-200  min-h-screen flex flex-col items-center justify-start relative'>
+		<section
+			ref={contactRef}
+			className='bg-slate-200  min-h-screen flex flex-col items-center justify-start relative'>
 			<AnimatedWave />
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1 }}

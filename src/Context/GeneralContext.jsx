@@ -1,5 +1,4 @@
-import { createContext, useState } from "react";
-
+import { createContext, useRef, useState } from "react";
 const generalContext = createContext();
 
 function GeneralContext({ children }) {
@@ -26,6 +25,10 @@ function GeneralContext({ children }) {
 		"Además de continuar aprendiendo sobre desarrollo web estoy cursando clases de inglés (B1) para mejorar mi capacidad de comunicarme en un entorno global.\n\n" +
 		"Mi viaje en la industria tech recién comienza, pero ha sido una montaña rusa de aprendizaje y crecimiento. Más allá de las habilidades técnicas, he aprendido a resolver problemas de manera creativa y comprometerme con el aprendizaje continuo como filosofía personal.";
 
+	const projectsRef = useRef(null);
+	const aboutMeRef = useRef(null);
+	const contactRef = useRef(null);
+
 	return (
 		<generalContext.Provider
 			value={{
@@ -36,6 +39,9 @@ function GeneralContext({ children }) {
 				parrafo3,
 				parrafo4,
 				parrafo5,
+				projectsRef,
+				aboutMeRef,
+				contactRef,
 			}}>
 			{children}
 		</generalContext.Provider>

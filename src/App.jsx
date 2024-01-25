@@ -5,6 +5,7 @@ import { Contact } from "./Components/Contact/Contact";
 import { Home } from "./Components/Home/Home";
 import { Projects } from "./Components/Projects/Projects";
 import { GeneralContext } from "./Context/GeneralContext";
+
 function App() {
 	return (
 		<GeneralContext>

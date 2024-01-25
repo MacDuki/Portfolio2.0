@@ -1,9 +1,13 @@
 import { motion } from "framer-motion";
+import React from "react";
+import { generalContext } from "../../Context/GeneralContext";
 import { AboutForm } from "./AboutForm";
-
 function AboutMe() {
+	const { aboutMeRef } = React.useContext(generalContext);
 	return (
-		<section className='bg-slate-200   pb-72  min-h-screen flex flex-col items-center justify-start relative'>
+		<section
+			ref={aboutMeRef}
+			className='bg-slate-200   pb-72  min-h-screen flex flex-col items-center justify-start relative'>
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1 }}
 				initial={{ opacity: 0, scale: 0 }}

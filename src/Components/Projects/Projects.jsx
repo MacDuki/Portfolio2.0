@@ -1,14 +1,20 @@
 import { motion } from "framer-motion";
+import React from "react";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaAws, FaCss3Alt, FaGithub, FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiExpress, SiNextdotjs, SiTailwindcss } from "react-icons/si";
+import { generalContext } from "../../Context/GeneralContext";
 import "./animationDelay.css";
 
 function Projects() {
+	const { projectsRef } = React.useContext(generalContext);
+
 	return (
-		<section className='bg-slate-200 flex flex-col items-center justify-center relative'>
+		<section
+			ref={projectsRef}
+			className='bg-slate-200 flex flex-col items-center justify-center relative'>
 			<img alt='' className='select-none' src='src\assets\projectWave.svg' />
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1 }}

@@ -3,7 +3,8 @@ import { useContext, useEffect, useState } from "react";
 import { generalContext } from "../../Context/GeneralContext";
 import "./textStyles.css";
 function Menu() {
-	const { activeMenu, setActiveMenu } = useContext(generalContext);
+	const { activeMenu, projectsRef, aboutMeRef, contactRef, setActiveMenu } =
+		useContext(generalContext);
 
 	const [isImageLoading, setIsImageLoading] = useState(true);
 
@@ -12,6 +13,11 @@ function Menu() {
 			setIsImageLoading(false);
 		}, 500);
 	}, []);
+
+	const scrollToSection = (ref) => {
+		ref.current.scrollIntoView({ behavior: "smooth" });
+		setActiveMenu(!activeMenu);
+	};
 
 	if (activeMenu) {
 		return (
@@ -28,6 +34,7 @@ function Menu() {
 							damping: 80,
 							mass: 4,
 						}}
+						onClick={() => scrollToSection(projectsRef)}
 						className=' select-none w-full bg-slate-900 px-2 py-1 rounded-lg cursor-pointer'>
 						Projects
 					</motion.div>
@@ -42,6 +49,7 @@ function Menu() {
 							damping: 80,
 							mass: 4,
 						}}
+						onClick={() => scrollToSection(contactRef)}
 						className='w-full select-none bg-slate-900 px-2 py-1 rounded-lg cursor-pointer'>
 						Contact
 					</motion.div>
@@ -56,6 +64,7 @@ function Menu() {
 							damping: 80,
 							mass: 4,
 						}}
+						onClick={() => scrollToSection(aboutMeRef)}
 						className='w-full select-none bg-slate-900 px-2 py-1 whitespace-nowrap rounded-lg cursor-pointer'>
 						About Me
 					</motion.div>
