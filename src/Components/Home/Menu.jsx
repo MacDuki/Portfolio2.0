@@ -7,13 +7,11 @@ function Menu() {
 		useContext(generalContext);
 
 	const [isImageLoading, setIsImageLoading] = useState(true);
-
 	useEffect(() => {
 		setTimeout(() => {
 			setIsImageLoading(false);
 		}, 500);
 	}, []);
-
 	const scrollToSection = (ref) => {
 		ref.current.scrollIntoView({ behavior: "smooth" });
 		setActiveMenu(!activeMenu);

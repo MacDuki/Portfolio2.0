@@ -7,12 +7,6 @@ import { Menu } from "./Menu";
 function HomeTittle() {
 	const { activeMenu, setActiveMenu } = useContext(generalContext);
 
-	function scrollToTop() {
-		window.scrollTo({
-			top: 0,
-			behavior: "smooth",
-		});
-	}
 	return (
 		<div className='w-full h-auto flex flex-col items-center justify-center relative z-10  '>
 			<motion.img

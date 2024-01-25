@@ -28,6 +28,8 @@ function GeneralContext({ children }) {
 	const projectsRef = useRef(null);
 	const aboutMeRef = useRef(null);
 	const contactRef = useRef(null);
+	const homeRef = useRef(null);
+	const [moreData, setMoreData] = useState("");
 
 	return (
 		<generalContext.Provider
@@ -42,6 +44,9 @@ function GeneralContext({ children }) {
 				projectsRef,
 				aboutMeRef,
 				contactRef,
+				moreData,
+				setMoreData,
+				homeRef,
 			}}>
 			{children}
 		</generalContext.Provider>

@@ -6,10 +6,12 @@ import { FaReact } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiExpress, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { generalContext } from "../../Context/GeneralContext";
+import { ProjectInfo } from "./ProjectInfo.jsx";
 import "./animationDelay.css";
 
 function Projects() {
-	const { projectsRef } = React.useContext(generalContext);
+	const { projectsRef, moreData, setMoreData } =
+		React.useContext(generalContext);
 
 	return (
 		<section
@@ -29,50 +31,61 @@ function Projects() {
 				className='select-none text-6xl absolute top-1 mx-auto font-tittle font-bold text-bgLight md:text-8xl md: top-6'>
 				Projects
 			</motion.h2>
-			<div className='bg-slate-300 h-5/6 w-5/6 flex flex-col p-40 rounded-lg items-center justify-center lg:flex-row gap-5'>
-				<motion.div
-					whileInView={{ opacity: 1, x: 0 }}
-					initial={{ opacity: 0, x: -200 }}
-					transition={{
-						type: "spring",
-						stiffness: 363,
-						damping: 80,
-						mass: 4,
-					}}
-					whileHover={{ scale: 1.1 }}
-					whileTap={{ scale: 0.9 }}
-					className='w-60 h-60 bg-red-700 border-2 border-black cursor-pointer'>
-					<img className='w-60 h-60 border-2 border-black' alt='' src='' />
-				</motion.div>
-				<motion.div
-					whileInView={{ opacity: 1, x: 0 }}
-					initial={{ opacity: 0, x: -200 }}
-					transition={{
-						type: "spring",
-						stiffness: 363,
-						damping: 80,
-						mass: 4,
-					}}
-					whileHover={{ scale: 1.1 }}
-					whileTap={{ scale: 0.9 }}
-					className='w-60 h-60 bg-red-700 border-2 border-black cursor-pointer'>
-					<img className='w-60 h-60 border-2 border-black' alt='' src='' />
-				</motion.div>
-				<motion.div
-					whileInView={{ opacity: 1, x: 0 }}
-					initial={{ opacity: 0, x: -200 }}
-					transition={{
-						type: "spring",
-						stiffness: 363,
-						damping: 80,
-						mass: 4,
-					}}
-					whileHover={{ scale: 1.1 }}
-					whileTap={{ scale: 1 }}
-					className='w-60 h-60 bg-red-700 border-2 border-black cursor-pointer'>
-					<img className='w-60 h-60 border-2 border-black' alt='' src='' />
-				</motion.div>
+
+			<div className='select-none bg-slate-300 w-full md:w-5/6 relative h-5/6 flex flex-col p-5 lg:p-40 rounded-lg items-center justify-center lg:flex-row gap-5'>
+				{moreData ? (
+					<ProjectInfo />
+				) : (
+					<>
+						<motion.div
+							whileInView={{ opacity: 1, x: 0 }}
+							initial={{ opacity: 0, x: -200 }}
+							transition={{
+								type: "spring",
+								stiffness: 363,
+								damping: 80,
+								mass: 4,
+							}}
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+							className='w-60 h-60 bg-blue-700 border-2 border-black cursor-pointer'>
+							<img className='w-60 h-60 border-2 border-black' alt='' src='' />
+						</motion.div>
+						<motion.div
+							whileInView={{ opacity: 1, x: 0 }}
+							initial={{ opacity: 0, x: -200 }}
+							transition={{
+								type: "spring",
+								stiffness: 363,
+								damping: 80,
+								mass: 4,
+							}}
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 0.9 }}
+							className='w-60 h-60 bg-red-700 border-2 border-black cursor-pointer'
+							onClick={() => {
+								setMoreData("Ecommerce");
+							}}>
+							<img className='w-60 h-60 border-2 border-black' alt='' src='' />
+						</motion.div>
+						<motion.div
+							whileInView={{ opacity: 1, x: 0 }}
+							initial={{ opacity: 0, x: -200 }}
+							transition={{
+								type: "spring",
+								stiffness: 363,
+								damping: 80,
+								mass: 4,
+							}}
+							whileHover={{ scale: 1.1 }}
+							whileTap={{ scale: 1 }}
+							className='w-60 h-60 bg-green-700 border-2 border-black cursor-pointer'>
+							<img className='w-60 h-60 border-2 border-black' alt='' src='' />
+						</motion.div>
+					</>
+				)}
 			</div>
+
 			<div className='px-5 mt-16'>
 				<label className='flex flex-wrap flex-start items-center justify-center flex-row text-5xl gap-5  w-full h-auto  lg:gap-10 '>
 					<span className='delay-100   animate-bounce'>
