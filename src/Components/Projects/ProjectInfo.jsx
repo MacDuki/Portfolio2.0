@@ -1,45 +1,113 @@
-import { AnimatePresence, motion } from "framer-motion";
+import { motion } from "framer-motion";
 import React from "react";
+import { FaCss3Alt, FaGithub } from "react-icons/fa";
+import { FaReact } from "react-icons/fa6";
 import { ImCross } from "react-icons/im";
+import { RiJavascriptFill } from "react-icons/ri";
+import { SiTailwindcss } from "react-icons/si";
+import { TbBrandFramerMotion } from "react-icons/tb";
 import { generalContext } from "../../Context/GeneralContext";
+
 function ProjectInfo() {
 	const { moreData, setMoreData } = React.useContext(generalContext);
 	function handleMoreData() {
-		if ("Ecommerce" === moreData) {
+		if ("Garage Shop" === moreData) {
 			return (
 				<div className='relative w-full h-full  flex flex-col items-center justify-center gap-7'>
 					<img
 						className='w-full h-full rounded-md'
 						alt='pagina de ecommerce'
-						src='src\assets\home.png'
+						src='src\assets\home2.png'
 					/>
 					<p className='text-2xl'>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, natus
 						porro ut aliquid at doloremque labore suscipit iste illum magni
 						officia. Impedit, ab. Facere sint totam at nisi id illo.
 					</p>
-					<div className='w-20 h-auto animate-bounce bg-red-700 rounded-md flex items-center justify-center text-center'>
+					<div className='flex items-center justify-center'>
+						<label className='flex  flex-wrap items-center justify-center flex-row text-5xl gap-5  h-auto  lg:gap-10 '>
+							<span className='delay-100  '>
+								<FaGithub />
+							</span>
+							<span className='delay-200 '>
+								<RiJavascriptFill />
+							</span>
+							<span className='delay-300   '>
+								<FaCss3Alt />
+							</span>
+							<span className='delay-400   '>
+								<FaReact />
+							</span>
+							<span className='delay-500 animate-bounce '>
+								<TbBrandFramerMotion />
+							</span>
+						</label>
+					</div>
+					<button className='button-to-p'>
 						<a
 							className='no-underline decoration-inherit '
-							href='https://ecommerce-react-e965a.web.app/'>
-							{" "}
-							Garage Shop
+							href='https://ecommerce-react-e965a.web.app/'
+							target='_blank'>
+							Visite Site
 						</a>
-					</div>
+					</button>
 				</div>
 			);
-		} else if ("Organizer" === moreData) {
+		} else if ("Personal Organizer" === moreData) {
+			return (
+				<div className='relative w-full h-full  flex flex-col items-center justify-center gap-7'>
+					<img
+						className='w-full h-full rounded-md'
+						alt='pagina de ecommerce'
+						src='src\assets\organizer.png'
+					/>
+					<p className='text-2xl'>
+						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, natus
+						porro ut aliquid at doloremque labore suscipit iste illum magni
+						officia. Impedit, ab. Facere sint totam at nisi id illo.
+					</p>
+					<div className='flex items-center justify-center'>
+						<label className='flex flex-wrap flex-start items-center justify-center flex-row text-5xl gap-14 md:gap-5  w-full h-auto  lg:gap-10 '>
+							<span className='delay-100 '>
+								<FaGithub />
+							</span>
+							<span className='delay-200 '>
+								<RiJavascriptFill />
+							</span>
+							<span className='delay-300   '>
+								<FaCss3Alt />
+							</span>
+							<span className='delay-400   '>
+								<FaReact />
+							</span>
+							<span className='delay-500 animate-bounce '>
+								<TbBrandFramerMotion />
+							</span>
+							<span className='delay-600   '>
+								<SiTailwindcss />
+							</span>
+						</label>
+					</div>
+					<button className='button-to-p'>
+						<a
+							className='no-underline decoration-inherit '
+							href='https://ecommerce-react-e965a.web.app/'
+							target='_blank'>
+							Visite Site
+						</a>
+					</button>
+				</div>
+			);
 		} else if ("..." === moreData) {
 		}
 	}
 
 	return (
-		<AnimatePresence>
+		<>
 			{moreData && (
 				<motion.div
-					animate={{ opacity: 1, x: 0 }}
-					initial={{ opacity: 0, x: -200 }}
-					exit={{ opacity: 0, x: -200 }}
+					animate={{ opacity: 1, scale: 1, y: 0 }}
+					initial={{ opacity: 0, scale: 0, y: 800 }}
 					transition={{
 						type: "spring",
 						stiffness: 363,
@@ -47,7 +115,7 @@ function ProjectInfo() {
 						mass: 4,
 					}}
 					className='flex flex-col gap-7'>
-					<div className='flex flex-col md:flex-row w-full items-center justify-between'>
+					<div className='flex flex-col gap-5 lg:gap-0 lg:flex-row w-full items-center justify-between'>
 						<ImCross
 							className='cursor-pointer text-2xl'
 							onClick={() => {
@@ -59,7 +127,7 @@ function ProjectInfo() {
 					{handleMoreData()}
 				</motion.div>
 			)}
-		</AnimatePresence>
+		</>
 	);
 }
 

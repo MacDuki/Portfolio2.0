@@ -32,42 +32,55 @@ function Projects() {
 				Projects
 			</motion.h2>
 
-			<div className='select-none bg-slate-300 w-full md:w-5/6 relative h-5/6 flex flex-col p-5 md:p-40 rounded-lg items-center justify-center lg:flex-row gap-5'>
+			<div className='select-none bg-slate-300 w-full md:w-5/6 lg:w-4/6 relative h-5/6 flex flex-col p-5 lg:p-10 rounded-lg items-center justify-center  gap-5'>
 				{moreData ? (
 					<ProjectInfo />
 				) : (
 					<>
-						<motion.div
-							whileInView={{ opacity: 1, x: 0 }}
-							initial={{ opacity: 0, x: -200 }}
-							transition={{
-								type: "spring",
-								stiffness: 363,
-								damping: 80,
-								mass: 4,
-							}}
-							whileHover={{ scale: 1.1 }}
-							whileTap={{ scale: 0.9 }}
-							className='w-60 h-60 bg-blue-700 border-2 border-black cursor-pointer'>
-							<img className='w-60 h-60 border-2 border-black' alt='' src='' />
-						</motion.div>
-						<motion.div
-							whileInView={{ opacity: 1, x: 0 }}
-							initial={{ opacity: 0, x: -200 }}
-							transition={{
-								type: "spring",
-								stiffness: 363,
-								damping: 80,
-								mass: 4,
-							}}
-							whileHover={{ scale: 1.1 }}
-							whileTap={{ scale: 0.9 }}
-							className='w-60 h-60 bg-red-700 border-2 border-black cursor-pointer'
+						<div
 							onClick={() => {
-								setMoreData("Ecommerce");
+								setMoreData("Personal Organizer");
+							}}
+							className='w-full h-full relative flex items-center justify-center flex-col gap-3'>
+							<p className='    text-3xl '>Personal Organizer</p>
+							<motion.img
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: -200 }}
+								transition={{
+									type: "spring",
+									stiffness: 363,
+									damping: 80,
+									mass: 4,
+								}}
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }}
+								className='w-full md:w-3/4 mx-auto  object-cover  rounded-xl'
+								alt='Personal Organizer'
+								src='src\assets\Organizer.png'
+							/>
+						</div>
+						<div
+							className='w-full h-full relative flex items-center justify-center flex-col gap-3'
+							onClick={() => {
+								setMoreData("Garage Shop");
 							}}>
-							<img className='w-60 h-60 border-2 border-black' alt='' src='' />
-						</motion.div>
+							<p className='    text-3xl '>Garage Shop</p>
+							<motion.img
+								whileInView={{ opacity: 1, x: 0 }}
+								initial={{ opacity: 0, x: -200 }}
+								transition={{
+									type: "spring",
+									stiffness: 363,
+									damping: 80,
+									mass: 4,
+								}}
+								whileHover={{ scale: 1.1 }}
+								whileTap={{ scale: 0.9 }}
+								className='w-full md:w-3/4 mx-auto   object-cover  rounded-xl  cursor-pointer  '
+								alt='Ecommerce'
+								src='src\assets\home.png'
+							/>
+						</div>
 						<motion.div
 							whileInView={{ opacity: 1, x: 0 }}
 							initial={{ opacity: 0, x: -200 }}
@@ -79,8 +92,12 @@ function Projects() {
 							}}
 							whileHover={{ scale: 1.1 }}
 							whileTap={{ scale: 1 }}
-							className='w-60 h-60 bg-green-700 border-2 border-black cursor-pointer'>
-							<img className='w-60 h-60 border-2 border-black' alt='' src='' />
+							className='w-full h-full cursor-pointer  relative'>
+							<img
+								className='w-full md:w-3/4 mx-auto   object-cover  rounded-xl '
+								alt=''
+								src=''
+							/>
 						</motion.div>
 					</>
 				)}
