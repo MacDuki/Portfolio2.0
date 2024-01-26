@@ -6,10 +6,5 @@
 	height: 100%;
 	box-sizing: border-box;
 	display: block;
-	background-color: #0e4166;
-	background-image: linear-gradient(
-		to bottom,
-		rgba(14, 65, 102, 0.86),
-		#0e4166
-	);
+	background-image: linear-gradient(to bottom, #1b212b, rgb(35, 59, 90));
 }

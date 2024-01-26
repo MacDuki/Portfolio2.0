@@ -9,7 +9,7 @@ function Contact() {
 	return (
 		<section
 			ref={contactRef}
-			className='bg-slate-200  min-h-screen flex flex-col items-center justify-start relative'>
+			className=' min-h-screen flex flex-col items-center justify-start relative'>
 			<AnimatedWave />
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1 }}
@@ -21,7 +21,7 @@ function Contact() {
 					mass: 4,
 					duration: 0.1,
 				}}
-				className='select-none mt-6 mb-16 text-6xl mx-auto font-tittle font-bold text-bgWaveLight md:text-8xl absolute '>
+				className='select-none mt-6 mb-16 text-6xl mx-auto font-tittle font-bold text-bgLight md:text-8xl absolute '>
 				Contact Me
 			</motion.h2>
 			<ContactForm />

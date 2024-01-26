@@ -22,7 +22,7 @@ function ContactForm() {
 				}}>
 				<div class='form-group'>
 					<label for='email'>Email</label>
-					<input type='text' id='email' name='email' required />
+					<input type='email' id='email' name='email' required />
 				</div>
 				<div class='form-group'>
 					<label for='textarea'>How Can I Help You?</label>

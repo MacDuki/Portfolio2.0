@@ -16,7 +16,7 @@ function Projects() {
 	return (
 		<section
 			ref={projectsRef}
-			className='bg-slate-200 flex flex-col items-center justify-center relative'>
+			className='bg-slate-300 flex flex-col items-center justify-center relative'>
 			<img alt='' className='select-none' src='src\assets\projectWave.svg' />
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1 }}
@@ -32,7 +32,7 @@ function Projects() {
 				Projects
 			</motion.h2>
 
-			<div className='select-none bg-slate-300 w-full md:w-5/6 lg:w-4/6 relative h-5/6 flex flex-col p-5 lg:p-10 rounded-lg items-center justify-center  gap-5'>
+			<div className='select-none  w-full md:w-5/6 lg:w-4/6 relative h-5/6 flex flex-col p-5 lg:p-10 rounded-2xl items-center justify-center  gap-5'>
 				{moreData ? (
 					<ProjectInfo />
 				) : (

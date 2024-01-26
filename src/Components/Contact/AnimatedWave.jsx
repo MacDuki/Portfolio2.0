@@ -18,13 +18,13 @@ const AnimatedWave = () => {
 				<linearGradient id='bg'>
 					<stop
 						offset='0%'
-						style={{ stopColor: "rgba(130, 158, 249, 0.06)" }}></stop>
+						style={{ stopColor: "rgba(93, 113, 142, 1)" }}></stop>
 					<stop
 						offset='50%'
-						style={{ stopColor: "rgba(76, 190, 255, 0.6)" }}></stop>
+						style={{ stopColor: "rgba(27, 33, 43, 1)" }}></stop>
 					<stop
 						offset='100%'
-						style={{ stopColor: "rgba(115, 209, 72, 0.2)" }}></stop>
+						style={{ stopColor: "rgba(81, 100, 130, 1)" }}></stop>
 				</linearGradient>
 				<path
 					id='wave'

@@ -3,6 +3,17 @@ export default {
 	content: ["./src/**/*.{html,jsx,js}"],
 	theme: {
 		extend: {
+			boxShadow: {
+				custom: "24px 29px 28px 0px rgba(0, 0, 0.7, 0.1)",
+			},
+			colors: {
+				"blue-900": "rgb(27,33,43)",
+				"blue-700": "rgb(74,89,108)",
+				"gray-200": "rgb(182,198,219)",
+			},
+			backgroundColor: {
+				blueBlack: "#5B728F",
+			},
 			backgroundImage: {
 				"code-pattern":
 					"url('https://images.unsplash.com/photo-1516259762381-22954d7d3ad2?q=80&w=1789&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D')",
