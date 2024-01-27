@@ -146,7 +146,9 @@ function AboutForm() {
 				</div>
 			</div>
 
-			<motion.div layout className='flex flex-col items-center w-full h-full '>
+			<motion.div
+				layout
+				className='flex flex-col items-center w-full h-full select-none '>
 				<AnimatePresence>
 					{isVisible && (
 						<motion.div
@@ -155,8 +157,19 @@ function AboutForm() {
 							animate={{ x: 0 }}
 							exit={{ x: 600, opacity: 0 }}
 							transition={{ ease: "easeOut", duration: 0.3 }}
-							className={`flex items-center mt-2 w-full lg:w-1/2 mx-6  border-2 border-slate-700 rounded-3xl overflow-hidden ${styles.paragraph} `}>
-							<div className='px-2 py-4 whitespace-pre-line select-none'>
+							className={`flex items-center justify-center mt-2 w-full lg:w-1/2 mx-6   overflow-hidden ${styles.paragraph} `}>
+							<div className='w-full whitespace-pre-line bg-slate-50 rounded-3xl p-5 '>
+								<div class='flex items-center p-3'>
+									<div class='px-1'>
+										<span class='w-4 h-4 rounded-full inline-block bg-red-500 cursor-pointer'></span>
+									</div>
+									<div class='px-1'>
+										<span class='w-4 h-4 rounded-full inline-block bg-yellow-400 cursor-pointer'></span>
+									</div>
+									<div class='px-1'>
+										<span class='w-4 h-4 rounded-full inline-block bg-green-500 cursor-pointer'></span>
+									</div>
+								</div>
 								{parrafo}
 							</div>
 						</motion.div>
