@@ -14,7 +14,7 @@ function ContactForm() {
 	}
 
 	return (
-		<div class='form-container absolute top-60'>
+		<div class='form-container z-50'>
 			<form
 				class='form'
 				onSubmit={(e) => {

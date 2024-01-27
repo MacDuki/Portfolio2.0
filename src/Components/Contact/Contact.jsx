@@ -3,6 +3,7 @@ import React from "react";
 import { generalContext } from "../../Context/GeneralContext";
 import { AnimatedWave } from "./AnimatedWave";
 import { ContactForm } from "./ContactForm";
+import { SocialMedia } from "./SocialMedia";
 
 function Contact() {
 	const { contactRef } = React.useContext(generalContext);
@@ -21,10 +22,14 @@ function Contact() {
 					mass: 4,
 					duration: 0.1,
 				}}
-				className='select-none  mb-16 text-6xl mx-auto font-tittle font-bold text-bgLight md:text-8xl absolute '>
+				className='select-none  mb-16 text-6xl mx-auto font-tittle font-bold text-bgLight md:text-8xl z-50 '>
 				Contact Me
 			</motion.h2>
-			<ContactForm />
+
+			<div className='flex flex-col md:flex-row items-center  justify-center w-full relative gap-10 md:gap-20'>
+				<SocialMedia />
+				<ContactForm />
+			</div>
 		</section>
 	);
 }
