@@ -17,7 +17,7 @@ function Projects() {
 		<section
 			ref={projectsRef}
 			className='bg-slate-300 flex flex-col items-center justify-center relative'>
-			<img alt='' className='select-none' src='src\assets\projectWave.svg' />
+			<img alt='wave' className='select-none' src='src\assets\waveH1.svg' />
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1 }}
 				initial={{ opacity: 0, scale: 0 }}
@@ -28,7 +28,7 @@ function Projects() {
 					mass: 4,
 					duration: 0.1,
 				}}
-				className='select-none text-6xl absolute top-1 mx-auto font-tittle font-bold text-bgLight md:text-8xl md: top-6'>
+				className='select-none text-6xl absolute top-10 mx-auto font-tittle font-bold text-bgLight md:text-8xl '>
 				Projects
 			</motion.h2>
 
@@ -54,7 +54,7 @@ function Projects() {
 								}}
 								whileHover={{ scale: 1.1 }}
 								whileTap={{ scale: 0.9 }}
-								className='w-full md:w-3/4 mx-auto  object-cover  rounded-xl'
+								className='w-full md:w-3/4 mx-auto  object-cover cursor-pointer rounded-xl'
 								alt='Personal Organizer'
 								src='src\assets\Organizer.png'
 							/>
@@ -94,7 +94,7 @@ function Projects() {
 							whileTap={{ scale: 1 }}
 							className='w-full h-full cursor-pointer  relative'>
 							<img
-								className='w-full md:w-3/4 mx-auto   object-cover  rounded-xl '
+								className='w-full md:w-3/4 mx-auto cursor-pointer   object-cover  rounded-xl '
 								alt=''
 								src=''
 							/>
@@ -138,7 +138,7 @@ function Projects() {
 				</label>
 			</div>
 			<img
-				alt=''
+				alt='wave'
 				className='select-none'
 				src='src\assets\projectWaveFloor.svg'
 			/>

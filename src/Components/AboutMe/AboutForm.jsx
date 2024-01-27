@@ -155,7 +155,7 @@ function AboutForm() {
 							animate={{ x: 0 }}
 							exit={{ x: 600, opacity: 0 }}
 							transition={{ ease: "easeOut", duration: 0.3 }}
-							className={`flex items-center mt-1 w-full lg:w-1/2 mx-6  border border-black rounded-lg overflow-hidden ${styles.paragraph} `}>
+							className={`flex items-center mt-1 w-full lg:w-1/2 mx-6  border-2 border-black rounded-lg overflow-hidden ${styles.paragraph} `}>
 							<div className='px-2 py-4 whitespace-pre-line select-none'>
 								{parrafo}
 							</div>
