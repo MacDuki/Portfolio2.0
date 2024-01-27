@@ -16,19 +16,19 @@ function Projects() {
 	return (
 		<section
 			ref={projectsRef}
-			className='bg-slate-300 flex flex-col items-center justify-center relative'>
+			className='bg-slate-200 flex flex-col items-center justify-center relative '>
 			<img alt='wave' className='select-none' src='src\assets\waveH1.svg' />
 			<motion.h2
-				whileInView={{ opacity: 1, scale: 1 }}
-				initial={{ opacity: 0, scale: 0 }}
+				whileInView={{ opacity: 1, scale: 1, y: 0 }}
+				initial={{ opacity: 0, scale: 0, y: -200 }}
 				transition={{
 					type: "spring",
 					stiffness: 363,
 					damping: 80,
 					mass: 4,
-					duration: 0.1,
+					duration: 0.8,
 				}}
-				className='select-none text-6xl absolute top-10 mx-auto font-tittle font-bold text-bgLight md:text-8xl '>
+				className='select-none text-6xl mb-10 mx-auto font-tittle font-bold text-slate-600 md:text-8xl '>
 				Projects
 			</motion.h2>
 
@@ -41,8 +41,10 @@ function Projects() {
 							onClick={() => {
 								setMoreData("Personal Organizer");
 							}}
-							className='w-full h-full relative flex items-center justify-center flex-col gap-3'>
-							<p className='    text-3xl '>Personal Organizer</p>
+							className='w-full h-full relative flex items-center justify-center flex-col gap-3 '>
+							<p className='  font-tittle font-black   text-3xl '>
+								Personal Organizer
+							</p>
 							<motion.img
 								whileInView={{ opacity: 1, x: 0 }}
 								initial={{ opacity: 0, x: -200 }}
@@ -64,7 +66,9 @@ function Projects() {
 							onClick={() => {
 								setMoreData("Garage Shop");
 							}}>
-							<p className='    text-3xl '>Garage Shop</p>
+							<p className='    font-tittle font-black   text-3xl '>
+								Garage Shop
+							</p>
 							<motion.img
 								whileInView={{ opacity: 1, x: 0 }}
 								initial={{ opacity: 0, x: -200 }}
@@ -139,8 +143,8 @@ function Projects() {
 			</div>
 			<img
 				alt='wave'
-				className='select-none '
-				src='src\assets\projectWaveFloor.svg'
+				className='select-none transform scale-y-[-1] scale-x-[-1] '
+				src='src\assets\waveAboutUp.svg'
 			/>
 		</section>
 	);

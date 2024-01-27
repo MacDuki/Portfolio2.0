@@ -1,7 +1,7 @@
 import { AnimatePresence, motion } from "framer-motion";
 import { useContext, useState } from "react";
 import { generalContext } from "../../Context/GeneralContext";
-
+import "./AboutStyles.css";
 import styles from "./AnimatedParagraph.module.css";
 import profileStyles from "./profileStyle.module.css";
 function AboutForm() {
@@ -79,9 +79,9 @@ function AboutForm() {
 					/>
 				</motion.div>
 			</AnimatePresence>
-			<div className=' w-full h-20  flex items-center justify-center md:w-96'>
-				<div className='relative text-center flex items-center justify-center w-full border-none'>
-					<div className=' border border-black bg-slate-600 p-8 z-50 rounded-lg flex justify-between w-full'>
+			<div className=' w-full h-20  flex items-center justify-center md:w-96 '>
+				<div className='relative text-center flex items-center justify-center w-full border-none '>
+					<div className='  bg-slate-600 p-8 z-50   rounded-full flex justify-between w-full shake-form'>
 						<div className=''>
 							<input
 								className='shortest cursor-pointer w-5 h-5'

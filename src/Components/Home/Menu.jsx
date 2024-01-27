@@ -74,7 +74,7 @@ function Menu() {
 		);
 	} else if (!activeMenu) {
 		return (
-			<div className='flex flex-col items-center pt-10 lg:pt-0 min-h-560 lg:min-h-800 md:min-h-580 xl:min-h-350 2xl:min-h-0'>
+			<div className='flex flex-col items-center pt-10 lg:pt-0 min-h-560 lg:min-h-800 md:min-h-580 xl:min-h-350 2xl:min-h-0 '>
 				<motion.h1
 					animate={{ y: 0 }}
 					initial={{ y: 500, x: 0 }}
@@ -84,10 +84,10 @@ function Menu() {
 						damping: 80,
 						mass: 4,
 					}}
-					className=' select-none w-auto whitespace-nowrap '>
+					className=' select-none w-auto whitespace-nowrap mb-10 lg:mb-0 text-5xl md:text-7xl lg:text-7xl'>
 					Pedro Wattimo
 				</motion.h1>
-				<div className='text-container'>
+				<div className='text-container flex items-center justify-center flex-col lg:flex-row gap-[-1] lg:gap-7'>
 					<motion.h2
 						animate={{ y: 0 }}
 						initial={{ y: -500, x: 0 }}
@@ -97,10 +97,24 @@ function Menu() {
 							damping: 80,
 							mass: 4,
 						}}
-						className={`transition-colors duration-500 select-none w-auto whitespace-nowrap  bg-code-pattern z-20 text-2xl md:text-6xl lg:text-7xl ${
+						className={`transition-colors duration-500 select-none w-auto whitespace-nowrap  bg-code-pattern z-20 text-5xl md:text-7xl lg:text-7xl ${
 							isImageLoading ? " bg-black" : "bg-code-pattern"
 						}`}>
-						FullStack Developer
+						FullStack
+					</motion.h2>
+					<motion.h2
+						animate={{ y: 0 }}
+						initial={{ y: -500, x: 0 }}
+						transition={{
+							type: "spring",
+							stiffness: 363,
+							damping: 80,
+							mass: 4,
+						}}
+						className={`transition-colors duration-500 select-none w-auto whitespace-nowrap  bg-code-pattern z-20 text-6xl md:text-8xl lg:text-7xl ${
+							isImageLoading ? " bg-black" : "bg-code-pattern"
+						}`}>
+						Developer
 					</motion.h2>
 				</div>
 			</div>

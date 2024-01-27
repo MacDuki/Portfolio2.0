@@ -25,7 +25,7 @@ function HomeTittle() {
 
 			<motion.div
 				layout
-				className='flex flex-col items-center font-tittle cursor-default font-bold text-3xl h-auto text-bgWaveLight md:text-5xl lg:text-5xl '>
+				className='flex flex-col items-center font-tittle cursor-default font-bold text-4xl h-auto text-bgWaveLight md:text-5xl '>
 				<motion.div
 					animate={{ scale: 1 }}
 					initial={{ scale: 0 }}
@@ -40,7 +40,6 @@ function HomeTittle() {
 					className='mb-10 cursor-pointer text-black text-7xl lg:text-6xl'
 					onClick={() => {
 						setActiveMenu(!activeMenu);
-						scrollToTop();
 					}}>
 					{activeMenu ? <CgClose /> : <CgMenuGridO />}
 				</motion.div>

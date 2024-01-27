@@ -9,7 +9,7 @@ import { GeneralContext } from "./Context/GeneralContext";
 function App() {
 	return (
 		<GeneralContext>
-			<main className='overflow-x-hidden'>
+			<main className='overflow-x-hidden '>
 				<Home />
 				<Projects />
 				<AboutMe />

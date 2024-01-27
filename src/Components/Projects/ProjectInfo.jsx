@@ -114,7 +114,7 @@ function ProjectInfo() {
 						damping: 80,
 						mass: 4,
 					}}
-					className='flex flex-col gap-7 border border-black p-5 rounded-md bg-slate-600'>
+					className='flex flex-col gap-7 border-2 border-slate-400 p-5 rounded-md bg-slate-300 '>
 					<div className='flex flex-col gap-5 lg:gap-0 lg:flex-row w-full items-center justify-between'>
 						<ImCross
 							className='cursor-pointer text-2xl'
@@ -122,7 +122,9 @@ function ProjectInfo() {
 								setMoreData("");
 							}}
 						/>
-						<h3 className='mx-auto text-4xl'>{moreData}</h3>
+						<h3 className='mx-auto  font-tittle font-black  text-4xl'>
+							{moreData}
+						</h3>
 					</div>
 					{handleMoreData()}
 				</motion.div>

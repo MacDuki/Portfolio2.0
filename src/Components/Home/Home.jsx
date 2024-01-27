@@ -7,7 +7,7 @@ function Home() {
 	return (
 		<section
 			ref={homeRef}
-			className={`flex flex-col items-center justify-start relative h-auto  ${bStyle.background}`}>
+			className={`flex flex-col items-center font-title justify-start relative h-auto  ${bStyle.background}`}>
 			<HomeTittle />
 			<span></span>
 			<span></span>
