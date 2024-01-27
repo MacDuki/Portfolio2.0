@@ -139,7 +139,7 @@ function Projects() {
 			</div>
 			<img
 				alt='wave'
-				className='select-none'
+				className='select-none '
 				src='src\assets\projectWaveFloor.svg'
 			/>
 		</section>

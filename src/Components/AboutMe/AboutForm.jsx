@@ -146,7 +146,7 @@ function AboutForm() {
 				</div>
 			</div>
 
-			<motion.div layout className='flex flex-col items-center w-full h-full'>
+			<motion.div layout className='flex flex-col items-center w-full h-full '>
 				<AnimatePresence>
 					{isVisible && (
 						<motion.div
