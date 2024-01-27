@@ -23,7 +23,7 @@ function AboutMe() {
 					mass: 4,
 					duration: 0.8,
 				}}
-				className=' select-none mt-6 mb-16 text-6xl mx-auto font-tittle font-bold text-slate-600 md:text-8xl '>
+				className=' select-none mt-6  text-6xl mx-auto font-tittle font-bold text-slate-600 md:text-8xl '>
 				About Me
 			</motion.h2>
 			<AboutForm />

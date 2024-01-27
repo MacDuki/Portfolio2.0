@@ -17,7 +17,12 @@ function Projects() {
 		<section
 			ref={projectsRef}
 			className='bg-slate-200 flex flex-col items-center justify-center relative '>
-			<img alt='wave' className='select-none' src='src\assets\waveH1.svg' />
+			<img
+				alt='wave'
+				className='select-none absolute top-[-1px] '
+				src='src\assets\waveH1.svg'
+			/>
+
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1, y: 0 }}
 				initial={{ opacity: 0, scale: 0, y: -200 }}
@@ -28,7 +33,7 @@ function Projects() {
 					mass: 4,
 					duration: 0.8,
 				}}
-				className='select-none text-6xl mb-10 mx-auto font-tittle font-bold text-slate-600 md:text-8xl '>
+				className='select-none text-6xl mt-60 mb-10 mx-auto font-tittle font-bold text-slate-600 md:text-8xl '>
 				Projects
 			</motion.h2>
 

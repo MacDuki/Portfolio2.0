@@ -11,6 +11,7 @@ function App() {
 		<GeneralContext>
 			<main className='overflow-x-hidden '>
 				<Home />
+
 				<Projects />
 				<AboutMe />
 				<Contact />
