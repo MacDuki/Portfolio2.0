@@ -11,7 +11,7 @@ function AboutMe() {
 			<img
 				alt='wave'
 				src='src\assets\waveAboutUp.svg'
-				className=' select-none '
+				className=' select-none absolute top-[-1px] '
 			/>
 			<motion.h2
 				whileInView={{ opacity: 1, scale: 1, y: 0 }}
@@ -23,7 +23,7 @@ function AboutMe() {
 					mass: 4,
 					duration: 0.8,
 				}}
-				className=' select-none mt-6  text-6xl mx-auto font-tittle font-bold text-slate-600 md:text-8xl '>
+				className=' select-none mt-56  text-6xl mx-auto font-tittle font-bold text-slate-600 md:text-8xl '>
 				About Me
 			</motion.h2>
 			<AboutForm />

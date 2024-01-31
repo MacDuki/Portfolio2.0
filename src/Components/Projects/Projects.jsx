@@ -1,11 +1,12 @@
 import { motion } from "framer-motion";
-import React from "react";
+import { default as React } from "react";
 import { BiLogoPostgresql } from "react-icons/bi";
 import { FaAws, FaCss3Alt, FaGithub, FaNodeJs } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiExpress, SiNextdotjs, SiTailwindcss } from "react-icons/si";
 import { generalContext } from "../../Context/GeneralContext";
+import { MinimizedProjects } from "./MinimizedProjects.jsx";
 import { ProjectInfo } from "./ProjectInfo.jsx";
 import "./animationDelay.css";
 
@@ -38,114 +39,45 @@ function Projects() {
 			</motion.h2>
 
 			<div className='select-none  w-full md:w-5/6 lg:w-4/6 relative h-5/6 flex flex-col p-5 lg:p-10 rounded-2xl items-center justify-center  gap-5'>
-				{moreData ? (
-					<ProjectInfo />
-				) : (
-					<>
-						<div
-							onClick={() => {
-								setMoreData("Personal Organizer");
-							}}
-							className='w-full h-full relative flex items-center justify-center flex-col gap-3 '>
-							<p className='  font-tittle font-black   text-3xl '>
-								Personal Organizer
-							</p>
-							<motion.img
-								whileInView={{ opacity: 1, x: 0 }}
-								initial={{ opacity: 0, x: -200 }}
-								transition={{
-									type: "spring",
-									stiffness: 363,
-									damping: 80,
-									mass: 4,
-								}}
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }}
-								className='w-full md:w-3/4 mx-auto  object-cover cursor-pointer rounded-xl'
-								alt='Personal Organizer'
-								src='src\assets\Organizer.png'
-							/>
-						</div>
-						<div
-							className='w-full h-full relative flex items-center justify-center flex-col gap-3'
-							onClick={() => {
-								setMoreData("Garage Shop");
-							}}>
-							<p className='    font-tittle font-black   text-3xl '>
-								Garage Shop
-							</p>
-							<motion.img
-								whileInView={{ opacity: 1, x: 0 }}
-								initial={{ opacity: 0, x: -200 }}
-								transition={{
-									type: "spring",
-									stiffness: 363,
-									damping: 80,
-									mass: 4,
-								}}
-								whileHover={{ scale: 1.1 }}
-								whileTap={{ scale: 0.9 }}
-								className='w-full md:w-3/4 mx-auto   object-cover  rounded-xl  cursor-pointer  '
-								alt='Ecommerce'
-								src='src\assets\home.png'
-							/>
-						</div>
-						<motion.div
-							whileInView={{ opacity: 1, x: 0 }}
-							initial={{ opacity: 0, x: -200 }}
-							transition={{
-								type: "spring",
-								stiffness: 363,
-								damping: 80,
-								mass: 4,
-							}}
-							whileHover={{ scale: 1.1 }}
-							whileTap={{ scale: 1 }}
-							className='w-full h-full cursor-pointer  relative'>
-							<img
-								className='w-full md:w-3/4 mx-auto cursor-pointer   object-cover  rounded-xl '
-								alt=''
-								src=''
-							/>
-						</motion.div>
-					</>
-				)}
+				{moreData ? <ProjectInfo /> : <MinimizedProjects />}
 			</div>
+			{!moreData && (
+				<div className='px-5 mt-16'>
+					<label className='flex flex-wrap flex-start items-center justify-center flex-row text-5xl gap-5  w-full h-auto  lg:gap-10 '>
+						<span className=''>
+							<FaReact />
+						</span>
+						<span className='   '>
+							<FaNodeJs />
+						</span>
+						<span className='  '>
+							<FaGithub />
+						</span>
+						<span className=' '>
+							<RiJavascriptFill />
+						</span>
+						<span className='   '>
+							<FaCss3Alt />
+						</span>
+						<span className='  '>
+							<SiTailwindcss />
+						</span>
+						<span className=''>
+							<SiExpress />
+						</span>
+						<span className=' '>
+							<SiNextdotjs />
+						</span>
+						<span className='   '>
+							<FaAws />
+						</span>
+						<span className='  '>
+							<BiLogoPostgresql />
+						</span>
+					</label>
+				</div>
+			)}
 
-			<div className='px-5 mt-16'>
-				<label className='flex flex-wrap flex-start items-center justify-center flex-row text-5xl gap-5  w-full h-auto  lg:gap-10 '>
-					<span className='delay-100   animate-bounce'>
-						<FaReact />
-					</span>
-					<span className='delay-200   '>
-						<FaNodeJs />
-					</span>
-					<span className='delay-300  '>
-						<FaGithub />
-					</span>
-					<span className='delay-400 '>
-						<RiJavascriptFill />
-					</span>
-					<span className='delay-500   '>
-						<FaCss3Alt />
-					</span>
-					<span className='delay-600   '>
-						<SiTailwindcss />
-					</span>
-					<span className='delay-700 '>
-						<SiExpress />
-					</span>
-					<span className='delay-800 '>
-						<SiNextdotjs />
-					</span>
-					<span className='delay-900   '>
-						<FaAws />
-					</span>
-					<span className='delay-1000   '>
-						<BiLogoPostgresql />
-					</span>
-				</label>
-			</div>
 			<img
 				alt='wave'
 				className='select-none transform scale-y-[-1] scale-x-[-1] '

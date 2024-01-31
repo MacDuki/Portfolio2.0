@@ -4,7 +4,6 @@ import { FaCss3Alt, FaGithub } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
 import { ImCross } from "react-icons/im";
 import { RiJavascriptFill } from "react-icons/ri";
-import { SiTailwindcss } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { generalContext } from "../../Context/GeneralContext";
 
@@ -59,39 +58,18 @@ function ProjectInfo() {
 					<img
 						className='w-full h-full rounded-md'
 						alt='pagina de ecommerce'
-						src='src\assets\organizer.png'
+						src='src\assets\organizerInfo.png'
 					/>
 					<p className='text-2xl'>
 						Lorem, ipsum dolor sit amet consectetur adipisicing elit. Qui, natus
 						porro ut aliquid at doloremque labore suscipit iste illum magni
 						officia. Impedit, ab. Facere sint totam at nisi id illo.
 					</p>
-					<div className='flex items-center justify-center'>
-						<label className='flex flex-wrap flex-start items-center justify-center flex-row text-5xl gap-14 md:gap-5  w-full h-auto  lg:gap-10 '>
-							<span className='delay-100 '>
-								<FaGithub />
-							</span>
-							<span className='delay-200 '>
-								<RiJavascriptFill />
-							</span>
-							<span className='delay-300   '>
-								<FaCss3Alt />
-							</span>
-							<span className='delay-400   '>
-								<FaReact />
-							</span>
-							<span className='delay-500 animate-bounce '>
-								<TbBrandFramerMotion />
-							</span>
-							<span className='delay-600   '>
-								<SiTailwindcss />
-							</span>
-						</label>
-					</div>
+					<div className='flex items-center justify-center'></div>
 					<button className='button-to-p'>
 						<a
 							className='no-underline decoration-inherit '
-							href='https://ecommerce-react-e965a.web.app/'
+							href='https://macduki.github.io/organizador-personal/'
 							target='_blank'>
 							Visite Site
 						</a>

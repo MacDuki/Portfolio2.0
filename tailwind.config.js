@@ -28,6 +28,7 @@ export default {
 				bgLightTheme: "#D9D5E1",
 			},
 			minHeight: {
+				140: "140px",
 				280: "280px",
 				300: "300px",
 				350: "350px",
@@ -45,6 +46,9 @@ export default {
 				900: "900px",
 				910: "910px",
 				1000: "1000px",
+			},
+			maxHeight: {
+				140: "140px",
 			},
 			spacing: {
 				400: "400px",
