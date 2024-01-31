@@ -5,9 +5,11 @@ import { FaBasketShopping, FaReact } from "react-icons/fa6";
 import { RiJavascriptFill } from "react-icons/ri";
 import { SiTailwindcss } from "react-icons/si";
 import { TbBrandFramerMotion } from "react-icons/tb";
+import { generalContext } from "../../Context/GeneralContext";
 import "./animationDelay.css";
 
 function MinimizedProjects() {
+	const { setMoreData } = React.useContext(generalContext);
 	return (
 		<>
 			<div className='w-6/7 md:w-4/6 h-full relative flex items-center justify-between flex-col md:flex-row text-bgLight bg-zinc-800  rounded-xl  '>
@@ -75,7 +77,7 @@ function MinimizedProjects() {
 
 			<div className='w-6/7 md:w-4/6 h-full relative flex flex-col md:flex-row-reverse items-center justify-between text-bgLight bg-zinc-800  rounded-xl  '>
 				<div className='w-1/2 min-h-140  flex flex-col items-center justify-start rounded-r-xl px-2 '>
-					<div className='flex items-center justify-between w-full px-0 md:px-2 lg:px-5'>
+					<div className='flex items-center justify-between w-full px-0 md:px-2 lg:px-14'>
 						<p className='  font-tittle font-black  text-2xl '>Garage Shop</p>
 
 						<FaBasketShopping className='text-4xl' />
@@ -122,7 +124,7 @@ function MinimizedProjects() {
 					onClick={() => {
 						setMoreData("Garage Shop");
 					}}
-					className='mt-5 lg:mt-0 w-4/5 lg:w-1/2 cursor-pointer flex min-h-140 items-end justify-center object-contain rounded-xl lg:rounded-l-xl hover:rounded-xl   bg-[#505F82] '>
+					className='mt-5 lg:mt-0 w-4/5 lg:w-1/2 cursor-pointer flex min-h-140 items-end justify-center object-contain rounded-xl lg:rounded-l-xl hover:rounded-xl  bg-[#505F82]  '>
 					<img
 						className='w-3/4  rounded-t-xl '
 						alt='Personal Organizer'

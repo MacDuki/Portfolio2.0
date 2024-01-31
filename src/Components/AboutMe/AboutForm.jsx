@@ -160,14 +160,21 @@ function AboutForm() {
 							className={`flex items-center justify-center mt-2 w-full lg:w-1/2 mx-6   overflow-hidden ${styles.paragraph} `}>
 							<div className='w-full whitespace-pre-line bg-slate-50 rounded-3xl p-5 '>
 								<div class='flex items-center p-3'>
-									<div class='px-1'>
-										<span class='w-4 h-4 rounded-full inline-block bg-red-500 cursor-pointer'></span>
+									<div
+										onClick={() => {
+											setSelectedOption("");
+											setParrafo("");
+											setHeightP("");
+											setIsVisible(false);
+										}}
+										className='px-1 cursor-pointer hover:scale-125 transition-all'>
+										<span class='w-4 h-4 rounded-full inline-block bg-red-500 '></span>
 									</div>
-									<div class='px-1'>
-										<span class='w-4 h-4 rounded-full inline-block bg-yellow-400 cursor-pointer'></span>
+									<div className='px-1 '>
+										<span class='w-4 h-4 rounded-full inline-block bg-yellow-400 '></span>
 									</div>
-									<div class='px-1'>
-										<span class='w-4 h-4 rounded-full inline-block bg-green-500 cursor-pointer'></span>
+									<div className='px-1 '>
+										<span class='w-4 h-4 rounded-full inline-block bg-green-500 '></span>
 									</div>
 								</div>
 								{parrafo}
