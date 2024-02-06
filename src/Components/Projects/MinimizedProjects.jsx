@@ -66,7 +66,7 @@ function MinimizedProjects() {
 						setMoreData("Personal Organizer");
 					}}
 					whileTap={{ scale: 0.9 }}
-					className='mt-5 lg:mt-0 w-4/5 lg:w-1/2 cursor-pointer hover:rounded-xl flex min-h-140 items-end justify-center object-contain rounded-xl lg:rounded-r-xl  bg-[#6E6F71] '>
+					className='mt-5 lg:mt-0 w-4/5 lg:w-1/2 cursor-pointer hover:rounded-xl flex min-h-140 items-end justify-center object-contain rounded-xl lg:rounded-r-xl   '>
 					<img
 						className='w-3/4  rounded-t-xl '
 						alt='Personal Organizer'
@@ -124,7 +124,7 @@ function MinimizedProjects() {
 					onClick={() => {
 						setMoreData("Garage Shop");
 					}}
-					className='mt-5 lg:mt-0 w-4/5 lg:w-1/2 cursor-pointer flex min-h-140 items-end justify-center object-contain rounded-xl lg:rounded-l-xl hover:rounded-xl  bg-[#505F82]  '>
+					className='mt-5 lg:mt-0 w-4/5 lg:w-1/2 cursor-pointer flex min-h-140 items-end justify-center object-contain rounded-xl lg:rounded-l-xl hover:rounded-xl    '>
 					<img
 						className='w-3/4  rounded-t-xl '
 						alt='Personal Organizer'
