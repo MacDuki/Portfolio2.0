@@ -2,7 +2,6 @@ import { motion } from "framer-motion";
 import React from "react";
 import { FaCss3Alt, FaGithub } from "react-icons/fa";
 import { FaReact } from "react-icons/fa6";
-import { ImCross } from "react-icons/im";
 import { RiJavascriptFill } from "react-icons/ri";
 import { TbBrandFramerMotion } from "react-icons/tb";
 import { generalContext } from "../../Context/GeneralContext";
@@ -66,14 +65,14 @@ function ProjectInfo() {
 						officia. Impedit, ab. Facere sint totam at nisi id illo.
 					</p>
 					<div className='flex items-center justify-center'></div>
-					<button className='button-to-p'>
-						<a
-							className='no-underline decoration-inherit '
-							href='https://macduki.github.io/organizador-personal/'
-							target='_blank'>
+					<a
+						href='https://macduki.github.io/organizador-personal/'
+						target='_blank'>
+						<button class='bg-gray-950 text-gray-400 border border-gray-400 border-b-4 font-medium overflow-hidden relative px-4 py-2 rounded-md hover:brightness-150 hover:border-t-4 hover:border-b active:opacity-75 outline-none duration-300 group'>
+							<span class='bg-gray-400 shadow-gray-400 absolute -top-[150%] left-0 inline-flex w-80 h-[5px] rounded-md opacity-50 group-hover:top-[150%] duration-500 shadow-[0_0_10px_10px_rgba(0,0,0,0.3)]'></span>
 							Visite Site
-						</a>
-					</button>
+						</button>
+					</a>
 				</div>
 			);
 		} else if ("..." === moreData) {
@@ -92,14 +91,15 @@ function ProjectInfo() {
 						damping: 80,
 						mass: 4,
 					}}
-					className='flex flex-col gap-7 border-2 border-slate-400 p-5 rounded-md bg-slate-300 '>
-					<div className='flex flex-col gap-5 lg:gap-0 lg:flex-row w-full items-center justify-between'>
-						<ImCross
-							className='cursor-pointer text-2xl'
+					className='flex flex-col gap-7  p-5 rounded-lg bg-slate-50  '>
+					<div className='flex flex-col gap-5 lg:gap-1 lg:flex-row w-full items-center justify-between'>
+						<span
 							onClick={() => {
 								setMoreData("");
 							}}
-						/>
+							class='bg-red-500 inline-block center w-5 h-5 cursor-pointer hover:scale-125 rounded-full transition-all'></span>
+						<span class='bg-yellow-500 inline-block center w-5 h-5 cursor-pointer  hover:scale-125 rounded-full transition-all'></span>
+						<span class='bg-green-500 box inline-block center w-5 h-5 cursor-pointer hover:scale-125 rounded-full transition-all'></span>
 						<h3 className='mx-auto  font-tittle font-black  text-4xl'>
 							{moreData}
 						</h3>

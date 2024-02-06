@@ -12,7 +12,7 @@ function MinimizedProjects() {
 	const { setMoreData } = React.useContext(generalContext);
 	return (
 		<>
-			<div className='w-6/7 md:w-4/6 h-full relative flex items-center justify-between flex-col md:flex-row text-bgLight bg-zinc-800  rounded-xl  '>
+			<div className='w-6/7 md:w-4/6 h-full lg:h-250 relative flex items-center justify-between flex-col md:flex-row text-bgLight bg-zinc-800  rounded-xl  '>
 				<div className='w-1/2 min-h-140  flex flex-col items-center justify-start rounded-l-xl px-2 '>
 					<div className='flex items-center justify-between w-full  px-0 md:px-2 lg:px-5'>
 						<p className='  font-tittle font-black  text-2xl '>
@@ -75,7 +75,7 @@ function MinimizedProjects() {
 				</motion.div>
 			</div>
 
-			<div className='w-6/7 md:w-4/6 h-full relative flex flex-col md:flex-row-reverse items-center justify-between text-bgLight bg-zinc-800  rounded-xl  '>
+			<div className='w-6/7 md:w-4/6 h-full lg:h-250 relative flex flex-col md:flex-row-reverse items-center justify-between text-bgLight bg-zinc-800  rounded-xl  '>
 				<div className='w-1/2 min-h-140  flex flex-col items-center justify-start rounded-r-xl px-2 '>
 					<div className='flex items-center justify-between w-full px-0 md:px-2 lg:px-14'>
 						<p className='  font-tittle font-black  text-2xl '>Garage Shop</p>
