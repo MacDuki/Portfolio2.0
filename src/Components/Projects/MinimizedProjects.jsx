@@ -13,15 +13,15 @@ function MinimizedProjects() {
 	return (
 		<>
 			<div className='w-6/7 md:w-4/6 h-full lg:h-250 relative flex items-center justify-between flex-col md:flex-row text-bgLight bg-zinc-800  rounded-xl  '>
-				<div className='w-1/2 min-h-140  flex flex-col items-center justify-start rounded-l-xl px-2 '>
-					<div className='flex items-center justify-between w-full  px-0 md:px-2 lg:px-5'>
-						<p className='  font-tittle font-black  text-2xl '>
+				<div className='w-1/2 min-h-140  flex flex-col items-center justify-start  px-2 '>
+					<div className='flex items-center justify-between w-full mt-5 lg:mt-0  px-0 md:px-2 lg:px-5'>
+						<p className='font-tittle font-black  text-2xl '>
 							Personal Organizer
 						</p>
 						<FaCalendarCheck className='text-4xl' />
 					</div>
-					<div className='flex items-center justify-center'>
-						<label className='mt-10 flex md:flex-wrap flex-start items-center justify-center flex-row text-4xl gap-5 md:gap-5  w-full h-auto  lg:gap-5 text-bgLight '>
+					<div className='flex flex-col items-center justify-center gap-2'>
+						<label className='mt-10 flex md:flex-wrap flex-start items-center justify-center flex-row text-3xl gap-5 md:gap-5  w-full h-auto  lg:gap-5 text-bgLight '>
 							<span className='delay-100   animate-bounce'>
 								<FaGithub />
 							</span>
@@ -61,23 +61,23 @@ function MinimizedProjects() {
 						damping: 80,
 						mass: 4,
 					}}
-					whileHover={{ scale: 0.9 }}
+					whileHover={{ scale: 1.05 }}
 					onClick={() => {
 						setMoreData("Personal Organizer");
 					}}
 					whileTap={{ scale: 0.9 }}
 					className='mt-5 lg:mt-0 w-4/5 lg:w-1/2 cursor-pointer hover:rounded-xl flex min-h-140 items-end justify-center object-contain rounded-xl lg:rounded-r-xl   '>
 					<img
-						className='w-3/4  rounded-t-xl '
+						className='w-5/6  rounded-md '
 						alt='Personal Organizer'
 						src='src\assets\Organizer.png'
 					/>
 				</motion.div>
 			</div>
 
-			<div className='w-6/7 md:w-4/6 h-full lg:h-250 relative flex flex-col md:flex-row-reverse items-center justify-between text-bgLight bg-zinc-800  rounded-xl  '>
-				<div className='w-1/2 min-h-140  flex flex-col items-center justify-start rounded-r-xl px-2 '>
-					<div className='flex items-center justify-between w-full px-0 md:px-2 lg:px-14'>
+			<div className='w-6/7 md:w-4/6 h-full lg:h-250 relative flex items-center justify-between flex-col md:flex-row text-bgLight bg-zinc-800  rounded-xl    '>
+				<div className='w-1/2 min-h-140  flex flex-col items-center justify-start px-2 '>
+					<div className='flex items-center justify-between w-full mt-5 lg:mt-0  px-0 md:px-2 lg:px-14'>
 						<p className='  font-tittle font-black  text-2xl '>Garage Shop</p>
 
 						<FaBasketShopping className='text-4xl' />
@@ -119,14 +119,14 @@ function MinimizedProjects() {
 						damping: 80,
 						mass: 4,
 					}}
-					whileHover={{ scale: 0.9 }}
+					whileHover={{ scale: 1.05 }}
 					whileTap={{ scale: 0.9 }}
 					onClick={() => {
 						setMoreData("Garage Shop");
 					}}
 					className='mt-5 lg:mt-0 w-4/5 lg:w-1/2 cursor-pointer flex min-h-140 items-end justify-center object-contain rounded-xl lg:rounded-l-xl hover:rounded-xl    '>
 					<img
-						className='w-3/4  rounded-t-xl '
+						className='w-5/6  rounded-md '
 						alt='Personal Organizer'
 						src='src\assets\home.png'
 					/>
